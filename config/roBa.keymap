@@ -16,11 +16,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 10>;
-        };
-
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
