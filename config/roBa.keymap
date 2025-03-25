@@ -26,6 +26,11 @@
             bindings = <&kp RA(PRINTSCREEN)>;
             key-positions = <9 11>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -53,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R    &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F    &kp G        &kp SINGLE_QUOTE      &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &lt 5 RET
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &kp SEMICOLON         &kp RET        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp DEL  &lt 2 SPACE  &mkp MB1              &kp BACKSPACE  &lt 4 SPACE                             &kp RIGHT_SHIFT
+&kp Q             &kp W         &kp E         &kp R    &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F    &kp G           &kp SINGLE_QUOTE      &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &lt 5 RET
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B           &kp SEMICOLON         &kp RET        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp DEL  &kp LEFT_SHIFT  &mkp MB1              &kp BACKSPACE  &lt 4 SPACE                             &kp LA(PSCRN)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -64,10 +69,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                      &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &none
             >;
         };
 
@@ -93,10 +98,10 @@
 
         MOUSE {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                  &kp NUMBER_6  &kp N7          &kp N8           &kp N9           &kp N0
-&none           &none         &none         &none         &none      &none         &none          &mkp MB1      &mkp MB1        &kp UP_ARROW     &mkp MB2         &mkp MB2
-&kp LEFT_SHIFT  &none         &none         &none         &none      &none         &none          &none         &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none
-&kp LCTRL       &kp LEFT_ALT  &kp LEFT_GUI  &kp DEL       &kp SPACE  &mkp MB1      &kp BACKSPACE  &kp SPACE                                                       &kp LEFT_SHIFT
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                        &kp NUMBER_6  &kp N7          &kp N8           &kp N9            &kp N0
+&none           &none         &none         &none         &kp ASTERISK    &kp SLASH      &none          &none         &mkp MB1        &kp UP_ARROW     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &none         &none         &none         &kp PLUS        &kp MINUS      &none          &none         &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW   &kp BACKSLASH
+&kp LCTRL       &kp LEFT_ALT  &kp LEFT_GUI  &kp DEL       &kp LEFT_SHIFT  &mkp MB1       &kp BACKSPACE  &kp SPACE                                                        &kp LEFT_SHIFT
             >;
         };
 
