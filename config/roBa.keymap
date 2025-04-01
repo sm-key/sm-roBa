@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R    &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F    &kp G        &kp SINGLE_QUOTE      &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &lt 5 RET
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &kp SEMICOLON         &kp RET        &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp DEL  &lt 2 SPACE  &mkp MB1              &kp BACKSPACE  &lt 4 SPACE                             &kp LA(PSCRN)
+&kp Q             &kp W         &kp E         &kp R    &kp T                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F    &kp G        &mkp MB1           &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 5 RET
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &kp SEMICOLON      &kp RET        &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp DEL  &lt 2 SPACE  &mkp MB1           &kp BACKSPACE  &lt 4 SPACE                             &kp LA(PSCRN)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -80,7 +80,7 @@
             bindings = <
 &none                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL                                   &none      &none      &none          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &none                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp SLASH      &none          &none      &none      &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp MINUS      &trans         &none      &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp MINUS      &trans         &kp SQT    &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH
 &trans                      &kp COMMA        &kp PERIOD       &kp DEL          &kp SPACE     &mkp MB1       &kp BACKSPACE  &kp SPACE                                                  &kp RIGHT_SHIFT
             >;
         };
