@@ -64,7 +64,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp DEL  &lt 2 SPACE  &mkp MB1           &kp BACKSPACE  &lt 4 SPACE                             &kp LA(PSCRN)
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         FUNCTION {
